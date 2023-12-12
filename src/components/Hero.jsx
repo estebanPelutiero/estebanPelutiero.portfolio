@@ -9,17 +9,19 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <Layout id={'home'} className={'flex flex-col-reverse lg:flex-row items-center lg:pt-20'}>
+    <Layout id={'home'} className={'flex flex-col-reverse justify-center lg:flex-row items-center pt-20'}>
 
       <div className='w-full lg:w-1/2 font-secondary'>
-        <div className='mb-2'>
-          <h1 className='text-white text-[5.5rem] leading-none font-semibold text-center lg:text-start'>Esteban <br /> <span className='text-purple'>Pelutiero</span></h1>
+        <div className='mb-4 lg:mb-2'>
+          <h1 className='text-white text-6xl lg:text-[5.4rem] leading-none font-semibold text-center lg:text-start'>
+            Esteban <br /> <span className='text-purple'>Pelutiero</span>
+          </h1>
         </div>
 
-          <span className='inline-block lg:hidden uppercase text-5xl text-white font-semibold text-center w-full'>
+          <span className='inline-block lg:hidden uppercase text-4xl lg:text-5xl text-white font-semibold text-center w-full'>
             Soy 
           </span>
-        <div className='text-center lg:text-start uppercase text-5xl text-white font-semibold mb-4'>
+        <div className='text-center lg:text-start uppercase text-4xl lg:text-5xl text-white font-semibold mb-4'>
         <span className='hidden lg:inline'>Soy </span>
           <TypeAnimation
             sequence={[
@@ -43,7 +45,7 @@ const Hero = () => {
 
         <div className='w-full flex justify-center items-center lg:justify-start gap-5'>
           <Button className='btn py-4 px-8 capitalize text-base font-medium font-primary rounded-full text-center'>
-            <Link to='contact'>
+            <Link className='rounded-full' to='contact'>
               Contacto
             </Link>
           </Button>
@@ -61,7 +63,7 @@ const Hero = () => {
 
       </div>
 
-      <figure className='lg:w-1/2 flex items-center justify-center'>
+      <figure className='lg:w-1/2 flex items-center justify-center mb-6 lg:mb-0'>
         <img className='w-[68%]' src={HeroPic} alt="Esteban Pelutiero Portfolio | Frontend Developer" />
       </figure>
 

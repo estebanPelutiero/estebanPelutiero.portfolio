@@ -11,6 +11,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Firma from "../assets/svgs/firma.svg";
 
 const NavList = () => {
+
   return (
     <ul className="z-10 mt-6 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
 
@@ -27,7 +28,7 @@ const NavList = () => {
           spy={true}
           to="home"
           duration={1300}
-          className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+          className="cursor-pointer flex items-center font-primary text-white font-normal text-base transition-colors"
         >
           Home
         </Link>
@@ -46,7 +47,7 @@ const NavList = () => {
           spy={true}
           to="about"
           duration={1300}
-          className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+          className="cursor-pointer flex items-center font-primary text-white font-normal text-base transition-colors"
         >
           Sobre mi
         </Link>
@@ -65,7 +66,7 @@ const NavList = () => {
           spy={true}
           to="work"
           duration={1300}
-          className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+          className="cursor-pointer flex items-center font-primary text-white font-normal text-base transition-colors"
         >
           Proyectos
         </Link>
@@ -76,7 +77,7 @@ const NavList = () => {
       <Typography
         as="li"
         variant="small"
-        className="flex justify-end lg:pl-4 lg:py-3 pt-3 pb-4"
+        className="flex justify-end lg:pl-4 lg:py-3 pt-3 pb-5"
       >
         <Link
           activeClass="active"
@@ -84,7 +85,7 @@ const NavList = () => {
           spy={true}
           to="contacto"
           duration={1300}
-          className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+          className="cursor-pointer flex items-center font-primary text-white font-normal text-base transition-colors"
         >
           Contacto
         </Link>
@@ -126,7 +127,7 @@ const Navbar = () => {
               duration={1300}
               >
                 <img
-                  className="w-[4.5rem] my-2"
+                  className="w-[4.5rem]"
                   src={Firma}
                   loading="lazy"
                   alt="Esteban Pelutiero | Frontend Developer"
