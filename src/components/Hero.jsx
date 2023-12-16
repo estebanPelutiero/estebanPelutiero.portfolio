@@ -1,74 +1,89 @@
 import React from 'react'
 import Layout from './Layout'
-import HeroPic from '../assets/images/hero.webp'
+import perfil from '../assets/images/perfil.webp'
 import { TypeAnimation } from 'react-type-animation'
 import { Button } from "@material-tailwind/react";
 import { Link } from 'react-scroll';
 import { IconButton } from "@material-tailwind/react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { DiReact, DiJsBadge, DiGit } from 'react-icons/di';
+import { SiTailwindcss } from 'react-icons/si';
+import { FaFigma } from 'react-icons/fa';
+import wave from '../assets/images/waving.png';
 
 const Hero = () => {
   return (
-    <Layout id={'home'} className={'flex flex-col-reverse justify-center lg:flex-row items-center pt-20'}>
+    <Layout id={'home'} className={'flex flex-col'}>
+      <div className='h-fit lg:h-screen flex flex-col-reverse lg:flex-row lg:items-center justify-center pt-[5.5rem] lg:pt-14'>
+        <div className='w-full lg:w-1/2 font-poppins'>
+          <div className='mb-4 lg:mb-6'>
+            <h1 className='text-white text-[40px] lg:text-[55px] leading-tight font-bold text-center lg:text-start my-8'>
+              Front-end <span className='text-purple'>React </span> Developer
+              <img className='inline w-11 lg:w-14 mx-3 mb-2' src={wave} alt="" />
+            </h1>
+          </div>
 
-      <div className='w-full lg:w-1/2 font-secondary'>
-        <div className='mb-4 lg:mb-2'>
-          <h1 className='text-white text-6xl lg:text-[5.4rem] leading-none font-semibold text-center lg:text-start'>
-            Esteban <br /> <span className='text-purple'>Pelutiero</span>
-          </h1>
+          <p className='text-white text-center lg:text-start text-base font-mulish mt-8 mb-10 leading-normal lg:w-[80%] tracking-wide'>Hi, I'm Esteban Pelutiero. A passionate Front-end React Developer based in Buenos Aires, Argentina 📍</p>
+
+          <div className='w-full flex justify-center items-center lg:justify-start gap-5'>
+            <Button className='btn py-4 px-8 capitalize text-base font-medium font-poppins rounded-full text-center'>
+              <Link className='rounded-full' to='contact'>
+                Contact
+              </Link>
+            </Button>
+            <IconButton size='md' className='rounded-full text-4xl bg-transparent'>
+              <a href="#">
+                <FaGithub />
+              </a>
+            </IconButton>
+            <IconButton size='md' className='rounded-lg text-4xl bg-transparent'>
+              <a href="#">
+                <FaLinkedin />
+              </a>
+            </IconButton>
+          </div>
+
         </div>
 
-          <span className='inline-block lg:hidden uppercase text-4xl lg:text-5xl text-white font-semibold text-center w-full'>
-            Soy 
-          </span>
-        <div className='text-center lg:text-start uppercase text-4xl lg:text-5xl text-white font-semibold mb-4'>
-        <span className='hidden lg:inline'>Soy </span>
-          <TypeAnimation
-            sequence={[
-              "Desarrollador",
-              2000,
-              "Diseñador",
-              2000,
-              "Freelancer",
-              2000,
-            ]}
-            speed={50}
-            wrapper='span'
-            className='text-purple'
-            repeat={Infinity}
-          />
-        </div>
-
-        <div className='text-white text-xl mb-8 text-center lg:text-start'>
-          Desarrollador Frontend <br /> formado en Buenos Aires, Argentina
-        </div>
-
-        <div className='w-full flex justify-center items-center lg:justify-start gap-5'>
-          <Button className='btn py-4 px-8 capitalize text-base font-medium font-primary rounded-full text-center'>
-            <Link className='rounded-full' to='contact'>
-              Contacto
-            </Link>
-          </Button>
-          <IconButton size='md' className='rounded-full text-4xl bg-transparent'>
-            <a href="#">
-              <FaGithub />
-            </a>
-          </IconButton>
-          <IconButton size='md' className='rounded-lg text-4xl bg-transparent'>
-            <a href="#">
-              <FaLinkedin />
-            </a>
-          </IconButton>
-        </div>
-
+        <figure className='lg:w-1/2 flex items-center justify-center mb-6 lg:mb-0'>
+          <img className='w-[80%] lg:w-[65%] morphBorder morph border-[2px] border-gray' src={perfil} alt="Esteban Pelutiero Portfolio | Frontend Developer" />
+        </figure>
+        
       </div>
 
-      <figure className='lg:w-1/2 flex items-center justify-center mb-6 lg:mb-0'>
-        <img className='w-[68%]' src={HeroPic} alt="Esteban Pelutiero Portfolio | Frontend Developer" />
-      </figure>
-
+      <div className='lg:w-2/3 lg:-mt-6 mt-20'>
+        <article className='flex flex-col lg:flex-row items-center gap-8'>
+          <h2 className=' text-purple text-xl font-poppins font-semibold uppercase text-center lg:text-start py-3 lg:pr-6 lg:py-1 border-white/50 border-y-[1px] lg:border-y-0 lg:border-r-[1px]'>
+            Tech Stack
+          </h2>
+          <div className='flex items-center gap-4 lg:gap-8'>
+            <DiReact color='white' size={60} />
+            <SiTailwindcss color='white' size={55} />
+            <DiGit color='white' size={60} />
+            <DiJsBadge color='white' size={40} />
+            <FaFigma color='white' size={42} />
+          </div>
+        </article>
+      </div>
     </Layout>
   )
 }
 
 export default Hero
+
+{/* <div className='text-center lg:text-start text-lg text-white font-medium mb-4 w-full'>
+          <TypeAnimation
+            sequence={[
+              "Hola, soy Esteban. Un apasionado por el frontend, formado en Buenos aires, Argentina",
+              2000,
+              // "Diseñador",
+              // 2000,
+              // "Freelancer",
+              // 2000,
+            ]}
+            speed={50}
+            wrapper='span'
+            className='text-white'
+            repeat={false}
+          />
+        </div> */}

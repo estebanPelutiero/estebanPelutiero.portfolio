@@ -3,16 +3,45 @@
 @tailwind utilities;
 
 .active {
-    color: #B809C3;
+  color: #B809C3;
 }
 
 .btn {
-    background: linear-gradient(
-      92.23deg,
-      #ff56f6 21.43%,
-      #b936ee 50.63%,
-      #3bace2 100%,
-      #406aff 117.04%
-    );
-    box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  background: linear-gradient(
+    92.23deg,
+    #ff56f6 21.43%,
+    #b936ee 50.63%,
+    #3bace2 100%,
+    #406aff 117.04%
+  );
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+}
+
+@layer base { 
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold hover:from-[#FF56F6] hover:to-[#42A6E3];
   }
+}
+
+.morph {
+  animation: morph 10s ease-in-out infinite;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.morphBorder {
+  border-top-left-radius: 60%;
+  border-top-right-radius: 40% 30%;
+  border-bottom-right-radius: 30% 70%;
+  border-bottom-left-radius: 70% 40%;
+}

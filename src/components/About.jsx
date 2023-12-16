@@ -1,38 +1,21 @@
-import React from 'react'
-import Layout from './Layout'
-import AboutPic from '../assets/images/about.png'
-import { DiReact, DiJsBadge, DiGit } from 'react-icons/di';
-import { SiTailwindcss } from 'react-icons/si';
-import { FaFigma } from 'react-icons/fa'
+import React from 'react';
+import Layout from './Layout';
+import AboutPic from '../assets/images/about.webp';
 import { Button } from '@material-tailwind/react';
 import { Link } from 'react-scroll';
 
 const About = () => {
   return (
-    <Layout id={'about'} className={'flex items-center pt-20'}>
-      <figure className='hidden lg:flex justify-center w-2/5'>
-        <img src={AboutPic} alt="Esteban Pelutiero | Desarrollador Frontend" />
+    <Layout id={'about'} className={'flex flex-col lg:flex-row items-center my-28 pt-20 lg:pt-14'}>
+      <figure className='flex justify-center h-72 lg:h-auto lg:w-1/2 mb-8 lg:mb-0'>
+        <img className='lg:w-[70%] w-full rounded-2xl object-cover' src={AboutPic} alt="Work desktop with laptop and a cup o coffee" />
       </figure>
-      <div className='w-full lg:w-3/5'>
-        <h2 className='text-purple text-3xl font-primary uppercase mb-6'>Sobre mi</h2>
-        <p className='text-white font-secondary text-lg mb-3 pb-3 border-b-[0.5px] border-b-white/30'>Soy desarrollador frontend, y vengo haciendo freelance desde principios de 2022. En este rango de tiempo estuve involucrado en varios proyectos, en los cuales me encargué de traspolar las ideas de mis clientes en algo que puedan ver en la pantalla, para luego escuchar cuanto les gustó. <br /> Mis servicios engloban desde el diseño en lápiz y papel, hasta el desarrollo en código completo del sitio. <br /> Me encuentro en constante movimiento de aprendizaje, actualmente estoy cursando un bootcamp, para pasar de frontend a fullstack.</p>
-        <h3 className='text-white font-primary text-lg mb-4 py-2'>
-          Tencologías que utilizo actualmente
-        </h3>
-        <div className='flex flex-col items-center gap-8 lg:flex-row justify-between'>
-          <figure className='flex items-center gap-8'>
-            <DiReact color='white' size={45} />
-            <SiTailwindcss color='white' size={45} />
-            <DiGit color='white' size={50} />
-            <DiJsBadge color='white' size={35} />
-            <FaFigma color='white' size={35} />
-          </figure>
-          <Button className='btn py-4 px-8 capitalize text-base font-medium font-primary rounded-full text-center'>
-            <Link to='contact'>
-              Contacto
-            </Link>
-          </Button>
-        </div>
+      <div className='w-full lg:w-1/2'>
+        <h2 className='text-purple text-xl font-poppins font-semibold uppercase mb-4 text-center lg:text-start'>About me</h2>
+        <h3 className='text-2xl text-gray-50 font-poppins font-bold mb-6 text-center lg:text-start'>A dedicated Front-end Developer based in Buenos Aires, Argentina 📍</h3>
+        <p className='text-white font-mulish text-[17px] leading-7 text-center lg:text-start'>
+        As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, and Tailwind. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.
+        </p>
       </div>
     </Layout>
   )

@@ -13,9 +13,7 @@ export default withMT({
 
     fontFamily: {
       'poppins': ['Poppins', 'sans-serif'],
-      primary: 'Orbitron',
-      secondary: 'Rajdhani',
-      tertiary: 'Aldrich',
+      'mulish': ['Mulish', 'sans-serif']
     },
 
     colors: {

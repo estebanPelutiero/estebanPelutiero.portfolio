@@ -28,7 +28,7 @@ const NavList = () => {
           spy={true}
           to="home"
           duration={1300}
-          className="cursor-pointer flex items-center font-primary text-white font-normal text-base transition-colors"
+          className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
         >
           Home
         </Link>
@@ -47,9 +47,9 @@ const NavList = () => {
           spy={true}
           to="about"
           duration={1300}
-          className="cursor-pointer flex items-center font-primary text-white font-normal text-base transition-colors"
+          className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
         >
-          Sobre mi
+          About
         </Link>
       </Typography>
 
@@ -66,9 +66,9 @@ const NavList = () => {
           spy={true}
           to="work"
           duration={1300}
-          className="cursor-pointer flex items-center font-primary text-white font-normal text-base transition-colors"
+          className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
         >
-          Proyectos
+          Projects
         </Link>
       </Typography>
 
@@ -85,9 +85,9 @@ const NavList = () => {
           spy={true}
           to="contacto"
           duration={1300}
-          className="cursor-pointer flex items-center font-primary text-white font-normal text-base transition-colors"
+          className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
         >
-          Contacto
+          Contact
         </Link>
       </Typography>
     </ul>
@@ -110,7 +110,7 @@ const Navbar = () => {
 
   return (
     <div className="z-50 fixed top-0 w-full bg-white/5 backdrop-blur-lg">
-      <nav className="mx-auto max-w-[1120px] shadow-none px-4 md:px-8 py-0 lg:px-0 border-none">
+      <nav className="mx-auto max-w-[1050px] shadow-none px-4 md:px-8 py-0 lg:px-0 border-none">
         <div className="flex items-center justify-between py-2">
           <Typography
             as="a"
