@@ -16,14 +16,14 @@ const Hero = () => {
     <Layout id={'home'} className={'flex flex-col'}>
       <div className='h-fit lg:h-screen flex flex-col-reverse lg:flex-row lg:items-center justify-center pt-[5.5rem] lg:pt-14'>
         <div className='w-full lg:w-1/2 font-poppins'>
-          <div className='mb-4 lg:mb-6'>
-            <h1 className='text-white text-[40px] lg:text-[55px] leading-tight font-bold text-center lg:text-start my-8'>
+          <div className='mb-2'>
+            <h1 className='text-white text-[40px] lg:text-[55px] leading-tight font-bold text-center lg:text-start mt-6'>
               Front-end <span className='text-purple'>React </span> Developer
               <img className='inline w-11 lg:w-14 mx-3 mb-2' src={wave} alt="" />
             </h1>
           </div>
 
-          <p className='text-white text-center lg:text-start text-base font-mulish mt-8 mb-10 leading-normal lg:w-[80%] tracking-wide'>Hi, I'm Esteban Pelutiero. A passionate Front-end React Developer based in Buenos Aires, Argentina 📍</p>
+          <p className='text-white text-center lg:text-start text-base font-mulish mt-6 mb-10 leading-normal lg:w-[80%] tracking-wide'>Hi, I'm Esteban Pelutiero. A passionate Front-end React Developer based in Buenos Aires, Argentina 📍</p>
 
           <div className='w-full flex justify-center items-center lg:justify-start gap-5'>
             <Button className='btn py-4 px-8 capitalize text-base font-medium font-poppins rounded-full text-center'>

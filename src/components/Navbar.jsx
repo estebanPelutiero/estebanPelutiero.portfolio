@@ -10,95 +10,187 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Firma from "../assets/svgs/firma.svg";
 
-const NavList = () => {
+const WINDOW_INNERWIDTH = window.innerWidth;
+
+const NavList = ({closeMenu}) => {
+
+  const handleClose = () => {
+    closeMenu();
+  }
 
   return (
-    <ul className="z-10 mt-6 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <>
+      <ul className="lg:hidden z-10 mt-6 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
 
-      {/* Home */}
+        {/* Home */}
 
-      <Typography
-        as="li"
-        variant="small"
-        className="flex justify-end lg:px-4 py-3 border-b-[1px] border-white/50 lg:border-none"
-      >
-        <Link
-          activeClass="active"
-          smooth={true}
-          spy={true}
-          to="home"
-          duration={1300}
-          className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+        <Typography
+          as="li"
+          variant="small"
+          className="flex justify-end lg:px-4 py-3 border-b-[1px] border-white/50 lg:border-none"
         >
-          Home
-        </Link>
-      </Typography>
+          <Link
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            to="home"
+            duration={1300}
+            onClick={handleClose}
+            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+          >
+            Home
+          </Link>
+        </Typography>
 
-      {/* About */}
+        {/* About */}
 
-      <Typography
-        as="li"
-        variant="small"
-        className="flex justify-end lg:px-4 py-3 border-b-[1px] border-white/50 lg:border-none"
-      >
-        <Link
-          activeClass="active"
-          smooth={true}
-          spy={true}
-          to="about"
-          duration={1300}
-          className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+        <Typography
+          as="li"
+          variant="small"
+          className="flex justify-end lg:px-4 py-3 border-b-[1px] border-white/50 lg:border-none"
         >
-          About
-        </Link>
-      </Typography>
+          <Link
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            to="about"
+            duration={1300}
+            onClick={() => handleClose()}
+            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+          >
+            About
+          </Link>
+        </Typography>
 
-      {/* Work */}
+        {/* Work */}
 
-      <Typography
-        as="li"
-        variant="small"
-        className="flex justify-end lg:px-4 py-3 border-b-[1px] border-white/50 lg:border-none"
-      >
-        <Link
-          activeClass="active"
-          smooth={true}
-          spy={true}
-          to="work"
-          duration={1300}
-          className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+        <Typography
+          as="li"
+          variant="small"
+          className="flex justify-end lg:px-4 py-3 border-b-[1px] border-white/50 lg:border-none"
         >
-          Projects
-        </Link>
-      </Typography>
+          <Link
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            to="work"
+            duration={1300}
+            onClick={() => handleClose()}
+            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+          >
+            Projects
+          </Link>
+        </Typography>
 
-      {/* Contact */}
+        {/* Contact */}
 
-      <Typography
-        as="li"
-        variant="small"
-        className="flex justify-end lg:pl-4 lg:py-3 pt-3 pb-5"
-      >
-        <Link
-          activeClass="active"
-          smooth={true}
-          spy={true}
-          to="contacto"
-          duration={1300}
-          className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+        <Typography
+          as="li"
+          variant="small"
+          className="flex justify-end lg:pl-4 lg:py-3 pt-3 pb-5"
         >
-          Contact
-        </Link>
-      </Typography>
-    </ul>
+          <Link
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            to="contact"
+            duration={1300}
+            onClick={() => handleClose()}
+            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+          >
+            Contact
+          </Link>
+        </Typography>
+      </ul>
+
+      <ul className="hidden z-10 mt-6 lg:flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+
+        {/* Home */}
+
+        <Typography
+          as="li"
+          variant="small"
+          className="flex justify-end lg:px-4 py-3 border-b-[1px] border-white/50 lg:border-none"
+        >
+          <Link
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            to="home"
+            duration={1300}
+            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+          >
+            Home
+          </Link>
+        </Typography>
+
+        {/* About */}
+
+        <Typography
+          as="li"
+          variant="small"
+          className="flex justify-end lg:px-4 py-3 border-b-[1px] border-white/50 lg:border-none"
+        >
+          <Link
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            to="about"
+            duration={1300}
+            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+          >
+            About
+          </Link>
+        </Typography>
+
+        {/* Work */}
+
+        <Typography
+          as="li"
+          variant="small"
+          className="flex justify-end lg:px-4 py-3 border-b-[1px] border-white/50 lg:border-none"
+        >
+          <Link
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            to="work"
+            duration={1300}
+            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+          >
+            Projects
+          </Link>
+        </Typography>
+
+        {/* Contact */}
+
+        <Typography
+          as="li"
+          variant="small"
+          className="flex justify-end lg:pl-4 lg:py-3 pt-3 pb-5"
+        >
+          <Link
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            to="contact"
+            duration={1300}
+            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+          >
+            Contact
+          </Link>
+        </Typography>
+      </ul>
+    </>
   );
 };
 
 const Navbar = () => {
+
   const [openNav, setOpenNav] = useState(false);
 
   const handleWindowResize = () =>
-    window.innerWidth >= 960 && setOpenNav(false);
+    WINDOW_INNERWIDTH >= 960 && setOpenNav(false);
 
   useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
@@ -107,6 +199,10 @@ const Navbar = () => {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
+
+  const closeMenu = () => {
+    setOpenNav(false);
+  };
 
   return (
     <div className="z-50 fixed top-0 w-full bg-white/5 backdrop-blur-lg">
@@ -152,11 +248,13 @@ const Navbar = () => {
           </IconButton>
         </div>
         <Collapse open={openNav}>
-          <NavList />
+          <NavList closeMenu={closeMenu}/>
         </Collapse>
       </nav>
     </div>
   );
 };
+
+
 
 export default Navbar;
