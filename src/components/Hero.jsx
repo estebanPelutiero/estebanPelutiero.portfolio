@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from './Layout'
-import perfil from '../assets/images/perfil.webp'
-import { TypeAnimation } from 'react-type-animation'
+import perfil from '../assets/images/hero.webp'
 import { Button } from "@material-tailwind/react";
 import { Link } from 'react-scroll';
 import { IconButton } from "@material-tailwind/react";
@@ -70,20 +69,3 @@ const Hero = () => {
 }
 
 export default Hero
-
-{/* <div className='text-center lg:text-start text-lg text-white font-medium mb-4 w-full'>
-          <TypeAnimation
-            sequence={[
-              "Hola, soy Esteban. Un apasionado por el frontend, formado en Buenos aires, Argentina",
-              2000,
-              // "Diseñador",
-              // 2000,
-              // "Freelancer",
-              // 2000,
-            ]}
-            speed={50}
-            wrapper='span'
-            className='text-white'
-            repeat={false}
-          />
-        </div> */}

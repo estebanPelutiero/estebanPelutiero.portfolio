@@ -30,13 +30,12 @@ const NavList = ({closeMenu}) => {
           className="flex justify-end lg:px-4 py-3 border-b-[1px] border-white/50 lg:border-none"
         >
           <Link
-            activeClass="active"
             smooth={true}
             spy={true}
             to="home"
             duration={1300}
             onClick={handleClose}
-            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+            className="cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
             Home
           </Link>
@@ -50,13 +49,12 @@ const NavList = ({closeMenu}) => {
           className="flex justify-end lg:px-4 py-3 border-b-[1px] border-white/50 lg:border-none"
         >
           <Link
-            activeClass="active"
             smooth={true}
             spy={true}
             to="about"
             duration={1300}
             onClick={() => handleClose()}
-            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+            className="cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
             About
           </Link>
@@ -70,13 +68,12 @@ const NavList = ({closeMenu}) => {
           className="flex justify-end lg:px-4 py-3 border-b-[1px] border-white/50 lg:border-none"
         >
           <Link
-            activeClass="active"
             smooth={true}
             spy={true}
             to="work"
             duration={1300}
             onClick={() => handleClose()}
-            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+            className="cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
             Projects
           </Link>
@@ -90,22 +87,21 @@ const NavList = ({closeMenu}) => {
           className="flex justify-end lg:pl-4 lg:py-3 pt-3 pb-5"
         >
           <Link
-            activeClass="active"
             smooth={true}
             spy={true}
             to="contact"
             duration={1300}
             onClick={() => handleClose()}
-            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+            className="cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
             Contact
           </Link>
         </Typography>
       </ul>
 
-      <ul className="hidden z-10 mt-6 lg:flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      {/* desktop */}
 
-        {/* Home */}
+      <ul className="hidden z-10 mt-6 lg:flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
 
         <Typography
           as="li"
@@ -113,12 +109,11 @@ const NavList = ({closeMenu}) => {
           className="flex justify-end lg:px-4 py-3 border-b-[1px] border-white/50 lg:border-none"
         >
           <Link
-            activeClass="active"
             smooth={true}
             spy={true}
             to="home"
             duration={1300}
-            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+            className="hover:text-purple ease-linear duration-100 cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
             Home
           </Link>
@@ -132,12 +127,11 @@ const NavList = ({closeMenu}) => {
           className="flex justify-end lg:px-4 py-3 border-b-[1px] border-white/50 lg:border-none"
         >
           <Link
-            activeClass="active"
             smooth={true}
             spy={true}
             to="about"
             duration={1300}
-            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+            className="hover:text-purple ease-linear duration-100 cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
             About
           </Link>
@@ -151,12 +145,11 @@ const NavList = ({closeMenu}) => {
           className="flex justify-end lg:px-4 py-3 border-b-[1px] border-white/50 lg:border-none"
         >
           <Link
-            activeClass="active"
             smooth={true}
             spy={true}
             to="work"
             duration={1300}
-            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+            className="hover:text-purple ease-linear duration-100 cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
             Projects
           </Link>
@@ -170,12 +163,11 @@ const NavList = ({closeMenu}) => {
           className="flex justify-end lg:pl-4 lg:py-3 pt-3 pb-5"
         >
           <Link
-            activeClass="active"
             smooth={true}
             spy={true}
             to="contact"
             duration={1300}
-            className="cursor-pointer flex items-center font-poppins text-white font-normal text-base transition-colors"
+            className="hover:text-purple ease-linear duration-100 cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
             Contact
           </Link>
