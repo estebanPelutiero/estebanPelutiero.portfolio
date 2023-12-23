@@ -26,17 +26,25 @@ const Hero = () => {
 
           <div className='w-full flex justify-center items-center lg:justify-start gap-5'>
             <Button className='btn py-4 px-8 capitalize text-base font-medium font-poppins rounded-full text-center'>
-              <Link className='rounded-full' to='contact'>
+              <Link className='rounded-full' to='contact' duration={1300} smooth={true}>
                 Contact
               </Link>
             </Button>
             <IconButton size='md' className='rounded-full text-4xl bg-transparent'>
-              <a href="#">
+              <a 
+              href="https://github.com/estebanPelutiero"
+              target='_blank'
+              rel='noopener noreferer'
+              >
                 <FaGithub />
               </a>
             </IconButton>
             <IconButton size='md' className='rounded-lg text-4xl bg-transparent'>
-              <a href="#">
+              <a 
+              href="https://www.linkedin.com/in/estebanpelutiero/"
+              target='_blank'
+              rel='noopener noreferer'
+              >
                 <FaLinkedin />
               </a>
             </IconButton>

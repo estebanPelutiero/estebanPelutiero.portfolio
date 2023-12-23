@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-
 import {
   Collapse,
   Typography,
   IconButton,
 } from "@material-tailwind/react";
-
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Firma from "../assets/svgs/firma.svg";
 
 const WINDOW_INNERWIDTH = window.innerWidth;
 
@@ -84,7 +81,7 @@ const NavList = ({closeMenu}) => {
         <Typography
           as="li"
           variant="small"
-          className="flex justify-end lg:pl-4 lg:py-3 pt-3 pb-5"
+          className="flex justify-end lg:pl-4 lg:py-3 pt-3 pb-4"
         >
           <Link
             smooth={true}
@@ -199,7 +196,7 @@ const Navbar = () => {
   return (
     <div className="z-50 fixed top-0 w-full bg-white/5 backdrop-blur-lg">
       <nav className="mx-auto max-w-[1050px] shadow-none px-4 md:px-8 py-0 lg:px-0 border-none">
-        <div className="flex items-center justify-between py-2">
+        <div className="flex items-center justify-between my-4">
           <Typography
             as="a"
             href="#"
@@ -211,15 +208,22 @@ const Navbar = () => {
               to="home"
               smooth={true}
               offset={-80}
-              className="cursor-pointer"
+              className="hidden lg:inline cursor-pointer"
               duration={1300}
               >
-                <img
-                  className="w-[4.5rem]"
-                  src={Firma}
-                  loading="lazy"
-                  alt="Esteban Pelutiero | Frontend Developer"
-                />
+                <h1 className="text-white text-[17px] font-poppins font-semibold hover:text-purple ease-linear duration-100">Esteban.dev</h1>
+              </Link>
+            </div>
+            <div className="">
+              <Link
+              to="home"
+              smooth={true}
+              offset={-80}
+              className="lg:hidden inline cursor-pointer"
+              duration={1300}
+              onClick={() => closeMenu()}
+              >
+                <h1 className="text-white text-[17px] font-poppins font-semibold hover:text-purple ease-linear duration-100">Esteban.dev</h1>
               </Link>
             </div>
           </Typography>

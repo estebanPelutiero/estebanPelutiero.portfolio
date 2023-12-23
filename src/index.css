@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
 .btn {
   background: linear-gradient(
     92.23deg,
