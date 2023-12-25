@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Contact = () => {
   return (
     <>
-      <section id='contact' className='flex items-center lg:items-start flex-col h-[70vh] mb-14 pt-28 mx-auto px-4 md:px-8 lg:px-0 lg:max-w-[1050px]'>
+      <section id='contact' className='flex items-center lg:items-start flex-col h-fit mb-14 py-36 mx-auto px-4 md:px-8 lg:px-0 lg:max-w-[1050px]'>
         <div className='w-full mb-14'>
           <h2 className='text-purple text-xl font-poppins font-semibold uppercase mb-4 text-center lg:text-start'>Contact</h2>
           <h3 className='text-2xl text-gray-50 font-poppins font-bold mb-6 text-center lg:text-start'>Don't be shy! Hit me up! 👇</h3>

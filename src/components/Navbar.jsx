@@ -30,7 +30,7 @@ const NavList = ({closeMenu}) => {
             smooth={true}
             spy={true}
             to="home"
-            duration={1300}
+            duration={500}
             onClick={handleClose}
             className="cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
@@ -49,8 +49,8 @@ const NavList = ({closeMenu}) => {
             smooth={true}
             spy={true}
             to="about"
-            duration={1300}
-            onClick={() => handleClose()}
+            duration={500}
+            onClick={handleClose}
             className="cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
             About
@@ -68,8 +68,8 @@ const NavList = ({closeMenu}) => {
             smooth={true}
             spy={true}
             to="work"
-            duration={1300}
-            onClick={() => handleClose()}
+            duration={500}
+            onClick={handleClose}
             className="cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
             Projects
@@ -87,8 +87,8 @@ const NavList = ({closeMenu}) => {
             smooth={true}
             spy={true}
             to="contact"
-            duration={1300}
-            onClick={() => handleClose()}
+            duration={500}
+            onClick={handleClose}
             className="cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
             Contact
@@ -109,7 +109,7 @@ const NavList = ({closeMenu}) => {
             smooth={true}
             spy={true}
             to="home"
-            duration={1300}
+            duration={500}
             className="hover:text-purple ease-linear duration-100 cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
             Home
@@ -127,7 +127,7 @@ const NavList = ({closeMenu}) => {
             smooth={true}
             spy={true}
             to="about"
-            duration={1300}
+            duration={500}
             className="hover:text-purple ease-linear duration-100 cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
             About
@@ -145,7 +145,7 @@ const NavList = ({closeMenu}) => {
             smooth={true}
             spy={true}
             to="work"
-            duration={1300}
+            duration={500}
             className="hover:text-purple ease-linear duration-100 cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
             Projects
@@ -163,7 +163,7 @@ const NavList = ({closeMenu}) => {
             smooth={true}
             spy={true}
             to="contact"
-            duration={1300}
+            duration={500}
             className="hover:text-purple ease-linear duration-100 cursor-pointer flex items-center font-poppins text-white font-semibold text-base transition-colors"
           >
             Contact
@@ -198,8 +198,6 @@ const Navbar = () => {
       <nav className="mx-auto max-w-[1050px] shadow-none px-4 md:px-8 py-0 lg:px-0 border-none">
         <div className="flex items-center justify-between my-4">
           <Typography
-            as="a"
-            href="#"
             variant="h6"
             className="mr-4 cursor-pointer"
           >

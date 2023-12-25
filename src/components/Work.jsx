@@ -9,7 +9,7 @@ import WorkCard from "./WorkCard";
 
 const Work = () => {
   return (
-    <Layout id={"work"} className={'py-20'}>
+    <Layout id={"work"} className={'flex flex-col justify-center pt-20'}>
 
       <div className='w-full mb-14'>
         <h2 className='text-purple text-xl font-poppins font-semibold uppercase mb-4 text-center lg:text-start'>Portfolio 👜</h2>

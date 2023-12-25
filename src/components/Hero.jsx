@@ -58,7 +58,7 @@ const Hero = () => {
         
       </div>
 
-      <div className='lg:w-2/3 lg:-mt-6 mt-20'>
+      <div className='lg:w-2/3 mt-20 lg:-mt-32'>
         <article className='flex flex-col lg:flex-row items-center gap-8'>
           <h2 className=' text-purple text-xl font-poppins font-semibold uppercase text-center lg:text-start py-3 lg:pr-6 lg:py-1 border-white/50 border-y-[1px] lg:border-y-0 lg:border-r-[1px]'>
             Tech Stack
